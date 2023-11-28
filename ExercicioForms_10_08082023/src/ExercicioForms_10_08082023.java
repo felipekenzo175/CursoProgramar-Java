@@ -13,7 +13,6 @@ public class ExercicioForms_10_08082023 {
 
 	public static void main(String[] args) {
 		criarTela();
-
 	}
 	
 	public static void criarTela() {
@@ -21,7 +20,7 @@ public class ExercicioForms_10_08082023 {
 		
 		criarInterfaceDoUsuario(tela);
 		
-		tela.setTitle("Tela de Botões");
+		tela.setTitle("TELA DE BOTÕES ESTENDIDOS");
 		
 		tela.setVisible(true);
 		

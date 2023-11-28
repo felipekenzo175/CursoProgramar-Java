@@ -30,8 +30,6 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 	public static void criarTela() {
 		JFrame tela = new JFrame();
 		
-		criarInterfaceDoUsuario(tela);
-		
 		tela.setTitle("Tela de Botões");
 		
 		tela.setVisible(true);
@@ -41,6 +39,8 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		tela.setLocationRelativeTo(null);
 		
 		tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		criarInterfaceDoUsuario(tela);
 	}
 	
 	/**
@@ -60,53 +60,53 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		JButton btnMensagem = new JButton("mensagem");
 		
-		btnMensagem.setSize(200,lblMensagem.getHeight()+30);
-		btnMensagem.setLocation(20, lblMensagem.getY()+15);
+		btnMensagem.setSize(lblMensagem.getWidth(),lblMensagem.getHeight()+30);
+		btnMensagem.setLocation(lblMensagem.getX(), lblMensagem.getY()+15);
 		
 		JLabel lblDesvCond = new JLabel("DESVIO CONDICIONAL");
 		
-		lblDesvCond.setSize(200,10);
-		lblDesvCond.setLocation(20, btnMensagem.getY()+50);
+		lblDesvCond.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblDesvCond.setLocation(lblMensagem.getX(), btnMensagem.getY()+50);
 		
 		JButton btnDesvCond = new JButton("desvio condicional");
 		
-		btnDesvCond.setSize(200,lblDesvCond.getHeight()+30);
-		btnDesvCond.setLocation(20, lblDesvCond.getY()+15);
+		btnDesvCond.setSize(btnMensagem.getWidth(),btnMensagem.getHeight());
+		btnDesvCond.setLocation(btnMensagem.getX(), lblDesvCond.getY()+15);
 		
 		JLabel lblDesvCondAninhado = new JLabel("DESVIO CONDICIONAL ANINHADO");
 		
-		lblDesvCondAninhado.setSize(200,10);
-		lblDesvCondAninhado.setLocation(20, btnDesvCond.getY()+50);
+		lblDesvCondAninhado.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblDesvCondAninhado.setLocation(lblMensagem.getX(), btnDesvCond.getY()+50);
 		
 		JButton btnDesvCondAninhado = new JButton("desvio condicional aninhado");
 		
-		btnDesvCondAninhado.setSize(200,lblDesvCondAninhado.getHeight()+30);
-		btnDesvCondAninhado.setLocation(20, lblDesvCondAninhado.getY()+15);
+		btnDesvCondAninhado.setSize(btnMensagem.getWidth(),btnMensagem.getHeight());
+		btnDesvCondAninhado.setLocation(btnMensagem.getX(), lblDesvCondAninhado.getY()+15);
 		
 		JLabel lblSwitchCase = new JLabel("SWITCH CASE");
 		
-		lblSwitchCase.setSize(200,10);
-		lblSwitchCase.setLocation(20, btnDesvCondAninhado.getY()+50);
+		lblSwitchCase.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblSwitchCase.setLocation(lblMensagem.getX(), btnDesvCondAninhado.getY()+50);
 		
 		JButton btnSwitchCase = new JButton("switch case");
 		
-		btnSwitchCase.setSize(200,lblSwitchCase.getHeight()+30);
-		btnSwitchCase.setLocation(20, lblSwitchCase.getY()+15);
+		btnSwitchCase.setSize(btnMensagem.getWidth(),btnMensagem.getHeight());
+		btnSwitchCase.setLocation(btnMensagem.getX(), lblSwitchCase.getY()+15);
 		
 		JLabel lblImpTxtWhile = new JLabel("IMPORTAR TEXTO WHILE");
 		
-		lblImpTxtWhile.setSize(200,10);
-		lblImpTxtWhile.setLocation(20,  btnSwitchCase.getY()+50);
+		lblImpTxtWhile.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtWhile.setLocation(lblMensagem.getX(),  btnSwitchCase.getY()+50);
 		
 		JButton btnImpTxtWhile = new JButton("importar texto while");
 		
-		btnImpTxtWhile.setSize(200,lblImpTxtWhile.getHeight()+30);
-		btnImpTxtWhile.setLocation(20, lblImpTxtWhile.getY()+15);
+		btnImpTxtWhile.setSize(btnMensagem.getWidth(),btnMensagem.getHeight());
+		btnImpTxtWhile.setLocation(btnMensagem.getX(), lblImpTxtWhile.getY()+15);
 		
 		JLabel lblImpTxtDoWhile = new JLabel("IMPORTAR TEXTO DO WHILE");
 		
-		lblImpTxtDoWhile.setSize(lblImpTxtWhile.getWidth(),lblImpTxtWhile.getHeight());
-		lblImpTxtDoWhile.setLocation(lblImpTxtWhile.getX(), lblImpTxtWhile.getY()+60);
+		lblImpTxtDoWhile.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtDoWhile.setLocation(lblImpTxtWhile.getX(), btnImpTxtWhile.getY()+50);
 		
 		JButton btnImpTxtDoWhile = new JButton("importar texto Do while");
 		
@@ -115,8 +115,8 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		JLabel lblImpTxtFor = new JLabel("IMPORTAR TEXTO FOR");
 		
-		lblImpTxtFor.setSize(lblImpTxtDoWhile.getWidth(),lblImpTxtDoWhile.getHeight());
-		lblImpTxtFor.setLocation(lblImpTxtDoWhile.getX(), lblImpTxtDoWhile.getY()+60);
+		lblImpTxtFor.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtFor.setLocation(lblImpTxtDoWhile.getX(), btnImpTxtDoWhile.getY()+50);
 		
 		JButton btnImpTxtFor = new JButton("importar texto For");
 		
@@ -125,8 +125,8 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		JLabel lblImpTxtForIn = new JLabel("IMPORTAR TEXTO FOR IN LISTA");
 		
-		lblImpTxtForIn.setSize(lblImpTxtFor.getWidth(),lblImpTxtFor.getHeight());
-		lblImpTxtForIn.setLocation(lblImpTxtFor.getX(), lblImpTxtFor.getY()+60);
+		lblImpTxtForIn.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtForIn.setLocation(lblImpTxtFor.getX(), btnImpTxtFor.getY()+50);
 		
 		JButton btnImpTxtForIn = new JButton("importar texto For In Coleção");
 		
@@ -135,8 +135,8 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		JLabel lblImpTxtForEach = new JLabel("IMPORTAR TEXTO FOREACH LAMBDA");
 		
-		lblImpTxtForEach.setSize(lblImpTxtForIn.getWidth(),lblImpTxtForIn.getHeight());
-		lblImpTxtForEach.setLocation(lblImpTxtForIn.getX(), lblImpTxtForIn.getY()+60);
+		lblImpTxtForEach.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtForEach.setLocation(lblImpTxtForIn.getX(), btnImpTxtForIn.getY()+50);
 		
 		JButton btnImpTxtForEach = new JButton("importar texto ForEach lambda");
 		
@@ -145,18 +145,18 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		JLabel lblImpTxtLimpa = new JLabel("LIMPAR A LIST BOX");
 		
-		lblImpTxtLimpa.setSize(lblImpTxtForEach.getWidth(),lblImpTxtForEach.getHeight());
-		lblImpTxtLimpa.setLocation(lblImpTxtForEach.getX(), lblImpTxtForEach.getY()+60);
+		lblImpTxtLimpa.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblImpTxtLimpa.setLocation(lblMensagem.getX(), btnImpTxtForEach.getY()+50);
 		
 		JButton btnImpTxtLimpa = new JButton("Limpar a List Box");
 		
-		btnImpTxtLimpa.setSize(btnImpTxtForEach.getWidth(), btnImpTxtForEach.getHeight());
-		btnImpTxtLimpa.setLocation(20, lblImpTxtLimpa.getY()+15);
+		btnImpTxtLimpa.setSize(btnMensagem.getWidth(),btnMensagem.getHeight());
+		btnImpTxtLimpa.setLocation(btnMensagem.getX(), lblImpTxtLimpa.getY()+15);
 		
 		JLabel lblPreferencias = new JLabel("LISTAGEM DAS PREFERÊNCIAS");
 		
-		lblPreferencias.setSize(200,10);
-		lblPreferencias.setLocation(240,lblMensagem.getY());
+		lblPreferencias.setSize(lblMensagem.getWidth(), lblMensagem.getHeight());
+		lblPreferencias.setLocation(lblMensagem.getWidth()+40,lblMensagem.getY());
 		
 		JList<String> lstbxPreferencias = new JList<String>();
 		
@@ -237,7 +237,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -257,6 +257,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 					}
 					
 					lstbxPreferencias.setModel(modelo);
+					
 				} catch (Exception ex) {
 					new Exception("Erro no Importar Texto While - " + ex.getMessage().toString());
 				}
@@ -269,7 +270,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -289,6 +290,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 					} while(linhaDoArquivo < totalLnhasDoArquivo);
 					
 					lstbxPreferencias.setModel(modelo);
+					
 				} catch (Exception ex) {
 					new Exception("Erro no Importar Texto Do While - " + ex.getMessage().toString());
 				}
@@ -301,7 +303,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -329,7 +331,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -357,7 +359,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -385,7 +387,7 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 			public void actionPerformed(ActionEvent e) {
 				//String strTexto = new Scanner(new InputStream("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt"), "UTF-8").userDelimiter("\\A");
 				try {
-					File file = new File("D:\\Dados\\GitHub\\felipekenzo175\\CursoProgramar-Java\\ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023\\Preferencias.txt");
+					File file = new File("C:\\CURSO PROGRAMAR\\JAVA\\preferencias.txt");
 					List<String> arrayLinhasDoArquivo = 
 					Files.readAllLines(file.toPath());
 					
@@ -428,5 +430,4 @@ public class ExercicioFormsLoopsArqTxtCompleto_Modelo_23082023 {
 		
 		tela.getContentPane().add(panel, BorderLayout.CENTER);
 	}
-
 }
