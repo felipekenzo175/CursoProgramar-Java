@@ -1,0 +1,56 @@
+COMEÇANDO EM JAVA
+- criar uma pasta chamada Curso Programar no "C:/", que
+é chamado de raíz do sistema, caso ainda não tenha.
+- após criar ou entrar na pasta do Curso Programar, crie
+uma pasta chamada Java dentro da pasta do Curso Programar.
+- baixar o java na internet.
+obs: https://www.java.com/pt-BR/download/
+- rodar java --version no prompt de comando, que é acessado
+digitando cmd na barra de pesquisa do windows.
+- baixar o jdk na internet.
+obs: https://www.oracle.com/br/java/technologies/downloads/#jdk21-windows
+- rodar javac -version no prompt de comando
+- criar um notepad(arquivo de texto.java), colocando dentro dele o programa inicial com o nome de teste, dentro da pasta Java que está dentro da pasta 
+Curso Programar e depois mudar a extensão para .java
+obs: programa inicial(teste.txt -> teste.java)
+public static void main(String[] args) {
+	System.out.println(null, "Parabéns, meu primeiro programa em Java");
+}
+- ir até a pasta Java dentro de Curso Programar e rodar o
+arquivo "teste.java" com o javac para criar um .class 
+desse arquivo (javac teste).
+- rodar o .class do arquivo com o comando java e o nome
+do arquivo (java teste).
+- se der tudo certo, baixar o instalador do eclipse na internet.
+obs: https://www.eclipse.org/downloads/
+- rodar o instalador do eclipse e escolher 
+for developers(primeira opção).
+- depois que instalar apertar o botão de launch.
+- procurar a pasta /jre no temp do windows que fica no
+usuários -> user -> AppData -> Local daí nessa pasta 
+pesquisa jre na barra de pesquisa das pastas.
+- clica na pasta jre copia e cola na pasta do Java dentro 
+da pasta do Curso Programar.
+- clica no Eclipse com o botão direito e vai em 
+propriedades, lá vai ter o caminho até o executável do
+Eclipse e embaixo vai ter um botão de ir até o local do 
+arquivo, clica nesse botão.
+- agora que vc está no local do arquivo eclipse.exe, vc
+vai ver que tem um arquivo eclipse.ini embaixo dele.
+- abre o eclipse.ini e entre o --launcher.appendVmargs e 
+o -vmargs, vc vai colocar duas linhas, uma com o -vm e 
+outra com o caminho do /bin que vc vai pegar na pasta do
+Java que vai estar dentro da pasta do Curso Programar, 
+para isso não feche o arquivo eclipse.ini e siga os
+passos seguintes.
+- para vc pegar o caminho do /bin da pasta do Java, 
+vc vai para essa pasta e digita jre na barra de pesquisa,
+depois vc vai clicar na pasta do jre duas vezes pra abrir
+o arquivo, daí vc vai clicar duas vezes na pasta bin pra
+abrir ela e finalmente vc vai clicar do lado esquerdo da 
+barra de pesquisa para pegar o caminho do /bin.
+- após pegar o caminho do /bin cola embaixo do -vm que 
+está dentro do eclipse.ini, salva e fecha ele.
+- após isso o seu ambiente está devidamente configurado
+para que vc possa começar os seus primeiros projetos na sua
+jornada dentro do Java.
