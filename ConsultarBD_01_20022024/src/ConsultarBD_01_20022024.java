@@ -39,7 +39,7 @@ public class ConsultarBD_01_20022024 extends JFrame implements ActionListener{
 	JPanel dtgdvwPreferencias;
 	
 	public ConsultarBD_01_20022024() {
-		setTitle("Exercicio Arqutitetura Profissional Front End Java - 13 - 23/01/2024");
+		setTitle("Exercicio Exercicio ConsultarBD 01 - 20/02/2024");
 		setSize(750, 720);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
