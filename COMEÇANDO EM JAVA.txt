@@ -12,17 +12,17 @@ obs: https://www.oracle.com/br/java/technologies/downloads/#jdk21-windows
 - rodar javac -version no prompt de comando
 - criar um notepad(arquivo de texto.java), colocando dentro dele o programa inicial com o nome de teste, dentro da pasta Java que está dentro da pasta 
 Curso Programar e depois mudar a extensão para .java
-obs: programa inicial(Teste.txt -> Teste.java)
-public class Teste {
+obs: programa inicial(Main.txt -> Main.java)
+public class Main {
 	public static void main(String[] args) {
 		System.out.println(null, "Parabéns, meu primeiro programa em Java");
 	}
 }
 - ir até a pasta Java dentro de Curso Programar e rodar o
-arquivo "teste.java" com o javac para criar um .class 
-desse arquivo (javac teste).
+arquivo "Main.java" com o javac para criar um .class 
+desse arquivo (javac Main).
 - rodar o .class do arquivo com o comando java e o nome
-do arquivo (java teste).
+do arquivo (java Main).
 - se der tudo certo, baixar o instalador do eclipse na internet.
 obs: https://www.eclipse.org/downloads/
 - rodar o instalador do eclipse e escolher 
