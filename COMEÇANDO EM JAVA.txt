@@ -15,7 +15,7 @@ Curso Programar e depois mudar a extensão para .java
 obs: programa inicial(Main.txt -> Main.java)
 public class Main {
 	public static void main(String[] args) {
-		System.out.println(null, "Parabéns, meu primeiro programa em Java");
+		System.out.println("Parabéns, meu primeiro programa em Java");
 	}
 }
 - ir até a pasta Java dentro de Curso Programar e rodar o
