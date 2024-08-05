@@ -5,7 +5,7 @@ COMEÇANDO EM JAVA
 uma pasta chamada Java dentro da pasta do Curso Programar.
 - baixar o java na internet.
 obs: https://www.java.com/pt-BR/download/
-- rodar java --version no prompt de comando, que é acessado
+- rodar java -version no prompt de comando, que é acessado
 digitando cmd na barra de pesquisa do windows.
 - baixar o jdk na internet.
 obs: https://www.oracle.com/br/java/technologies/downloads/#jdk21-windows
